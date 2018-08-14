@@ -1,0 +1,11 @@
+<form class="search">
+  <mat-form-field>
+    <input matInput
+           name="searchString"
+           [(ngModel)]="searchString"
+           placeholder="enter user"> </mat-form-field>
+  <span style="margin-left: 10px;">
+    <button mat-raised-button
+            (click)="SearchUser(searchString);">Search</button>
+  </span>
+</form>
